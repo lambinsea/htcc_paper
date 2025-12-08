@@ -7,11 +7,9 @@
 \begin{document}
   \maketitle
   \begin{abstract}
-      In the United States, a \textit{congressional district} is a contiguous geographical region containing approximately 700,000 people. In an action called \textit{redistricting}, state legislature redraws these boundaries following each nationwide census.
+    Redistricting is the process of redrawing electoral district boundaries based on regional population. Novel redistricting policies are a major source of controversy in the 2025 United States political climate. Recent computer-assisted analysis involves the stochastic construction of various redistricting schemes using methods such as Recombination Markov Chains (Recom). With Recom, any redistricting proposal is normed against the constructed schemes in order to detect gerrymandering. Interpretation of these results is often supplemented by a metric, such as a Polsby-Popper or Reock score, suggesting the geographical compactness of a region. However, as these scores solely prioritize geometric compactness, they are effectively blind to gerrymandering of smaller localities, such as counties or cities.
 
-    is the action of partitioning a geographical region into smaller subregions The problem of districting maintains a steadfast presence within We utilized public, official data of the demographics of voters in the states of California and Texas as our dataset from the recent years. Then, code in C++ was written to perform our Markov Chain where we apply the probability of each demographic group into a matrix. Our results were compared to current district maps to identify the geographical differences of the districts.
-
-    Spanning trees etc. [250 words]
+    Our study applies a mathematical model to analyze the current district maps resulting from the 2025 redistricting policies. Using publicly available data, we implemented the Recombination Markov Chain algorithm in Python, modeling the probability distribution of different demographic groups. Our Recom model was utilized in conjunction with a locality preservation model of compactness to provide additional insights into the relative effects of recent redistricting proposals. Preliminary results strongly indicated the presence of gerrymandering undetected by geometric compactness scores, suggesting a significant impact on future voting processes.
   \end{abstract} 
 
   \include{sections/lit-review}
